@@ -1,0 +1,164 @@
+<!--Indica que es modo html-->
+<!DOCTYPE html>
+<html lang="en">
+<!--Cabeza del HTML-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Indica el título de la página web-->
+    <title>Iniciando HTML</title>
+</head>
+
+<body>
+    <!--Es para un formulario-->
+    <!--El action sirve para que toda la información mandada por el submit guardarla-->
+    <!--Usar post para que no se vea la información enviada dentro del formulario
+    El get no usar con cosas personales debido a que muestra en la url los datos ingresados-->
+    <form action="/formulario" method="POST">
+        <!--Label es para poder introducir un dato
+        for dentro del label es para poner el identificador "nombre"-->
+        <!--El input id "nombre" Primero sirve para en caso de pinchar en Nombre en vez de la barra, automaticamente
+        te mande dentro de la misma; el id debe tener el "nombre" para que se lo mande a la línea-->
+        <!--name hace interpretar al servidor de que es la llave-->
+        <!--Nos indica que debemos llenar y saldra en la barra "Nombre"-->
+        <!--Type sirve para poner que tipo de valor es "submit" se hace un botón para enviar
+        text sirve para poder escribir un valor con tipo texto-->
+        <!--Value sirve para poner un texto por defecto en la parte de la respuesta-->
+        <label for="nombre">Nombre</label>
+        <input value="sapo" type="text" id="nombre" name="nombre" placeholder="Nombre" />
+        <br>
+        <label for="apellido">Apellido</label>
+        <input value="sapo" type="text" id="apellido" name="apellido" placeholder="Apellido" />
+        <br>
+        <label for="contraseña">Contraseña</label>
+        <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña Usuario" />
+        <br>
+        <!--Sirve para abrir una caja de texto
+        rows: filas - vertical
+        cols: columnas - horizontal-->
+        <!--Value no sirve en el text area, simplemente si se quiera añadir eso se escribe dentro de la etiqueta-->
+        <textarea cols="60" rows="10" id="comentario" placeholder="Ingresar comentario"
+            name="comentario">Este es el valor por defecto definida en el comentario</textarea>
+        <br>
+        <!--button es para enviar al formulario con la ruta puesta -->
+        <button type="submit">Tipo submit</button>
+        <!--Se junta el comportamiento con JS-->
+        <!--Se pueden incluir etiquetas dentro del mismo-->
+        <button type="button">
+            <img src="imágenes/Imagen goku vs vegeta.jpg" width="20px" height="20px">
+            Tipo botón
+        </button>
+        <!--Deja los valores enviados por última vez al recargar la página o volver a ella-->
+        <button type="reset">Tipo Reset</button>
+
+
+    </form>
+    Contenido de nuestra web
+    <h1>Mi primer Encabezado</h1>
+    <h2>Mi primer Encabezado</h2>
+    <h3>Mi primer Encabezado</h3>
+    <h4>Mi primer Encabezado</h4>
+    <h5>Mi primer Encabezado</h5>
+    <h6>Mi primer Encabezado</h6>
+    <p>Jonnath pro</p>
+    <p>Jonnath no tan pro</p>
+    <!--El hr sirve para hacer una separación mediante una linea horizontal-->
+    <hr>
+    <h2>Sapo Felipe</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maxime nihil nostrum mollitia omnis ipsa adipisci
+        laudantium, ut labore eius voluptatem officiis aut molestias sequi? Odit ea velit in autem.</p>
+    <!--<! y los dos "-" adicionales hacen los comentarios y no aparecen en el explorador
+    puedes escribir más lineas con enter
+    algo 
+    así-->
+    <!--El span podemos hacer para poder identificar una etiqueta dentro de otra etiqueta
+    Lo que está dentro de style solo se debe poner en css, no html pero es para visualizar que hace-->
+    <p>Este texto es <span style="color: red;"> más largo y necesitamos separar </span> las letras o espacios para poder
+        resolver</p>
+    <!--Se pueden hacer multiples saltos del linea con <br>-->
+    <p> ahora necesitamos ver para que sirve la etiqueta br <br>
+        sirve justo para eso</p>
+    <!--la etiqueta <a> es un ancla que sirve para direccionar a una página web-->
+    <a href="https://www.netflix.com/watch/81187470?trackId=13212365">Ir a Netlix</a> <br>
+    <!--En esta etiqueta es lo mismo pero el target blank sirve para abrirlo desde otra página-->
+    <a target="_blank" href="https://www.netflix.com/watch/81187470?trackId=13212365">Ir a Netflix en otra pestaña</a>
+    <br>
+    <!--Se puede hacer de dos metodos pero antes img es para mostrar una imágen
+    Primer método: img src "link de la imagen" no es recomendable porque se puede borrar la página fuente y no se mostrará la imágen
+    Segundo método: img src "carpeta/nombredeimagen" Es bueno ya que estará dentro de tu computadora-->
+    <!--El alt es cuando no sale la imagen y muestra el error llamado "imágen de goku"-->
+    <img src="imágenes/Imagen goku vs vegeta.jpg" alt="imagen de goku"> <br>
+    <!--En esta img solo modificamos el tamaño, width= anchura y heigh= altura. Ambas se pueden hacer tanto en medidas absolutas como relativas
+    absolutas: px
+    relativas: rem, "%"-->
+
+    <!--Div son contenedores para separar (se verán luego)-->
+    <div>
+        <img src="imágenes/Imagen resolución goku vs vegeta.jpg" width="60px" height="60px"
+            alt="Imagen de gokuvsvegeta 60x60">
+    </div>
+    <!--Ul es lista desordenada-->
+    <ul>
+        <li>lista1</li>
+        <li>lista2</li>
+        <li>lista3</li>
+        <li>lista4</li>
+    </ul>
+<!--Ol es lista desordenada-->
+    <ol>
+        <!--El value dentro de la lista es para decir el valor con el que va a empezar "lista1"-->
+        <li value="12">lista1</li>
+        <li>lista2</li>
+        <li>lista3</li>
+        <li>lista4</li>
+        <!-- Anidar listas es meter listas dentro de listas -->
+        <li>
+            <ol>
+                <li>Subelemento 1</li>
+                <li>Subelemento 2</li>
+                <li>Subelemento 3</li>
+            </ol>
+        </li>
+        
+    </ol>
+
+<!-------------------------------------------------------------------------------------------->
+    <!--Tablas-->
+    <!--Añadiré un poco de css para que se pueda visualizar-->
+    <!--Todo lo que tenga style es mejor ponerlo en CSS ya que no es una buena práctica mezclar lenguajes-->
+<table style="border: 1px solid;">
+    <!--Tr fila dentro de la tabla-->
+    <tr>
+        <!--Th es para la parte principal de la tabla (encabezado)-->
+        <tr>
+        <th>Productos</th>
+        <th>Precio</th>
+    </tr>
+<tr>
+
+<tr>
+    <!--td es los elementos que se encuentran dentro de las celdas de la tabla-->
+    <td>PS4</td>
+    <td>400 USD</td>
+</tr>
+
+<tr>
+    <!--td es los elementos que se encuentran dentro de las celdas de la tabla-->
+    <td>PS5</td>
+    <td>800 USD</td>
+</tr>
+
+<tr>
+    <!--td es los elementos que se encuentran dentro de las celdas de la tabla
+    Los elementos de la tabla están centrados por default pero al momneto de iniciar un texto largo se alinean a la izquierda como en la parte de productos-->
+    <td>PS4 renovada 4k</td>
+    <td>1500 USD</td>
+</tr>
+</table>
+
+<!-------------------------------------------------------------------------------------------------->
+</body>
+
+
+</html>
