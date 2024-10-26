@@ -6,6 +6,47 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <!--Se utiliza para el encabezado, no se puede colocar un header dentro de un header
+    tampoco dentro de un footer (pie de página)-->
+    <header id="titulo">
+        <h1>Blog de Jonnath</h1>
+    </header>
+
+    <!--Div tiene la misma función que section y article, los 3 separan contenedores-->
+    <div>
+        <p>Esto es un párrafo dentro de un div</p>
+    </div>
+
+    <!--Section define una sección-->
+    <section>
+        <!--article define contenido completamente independiente-->
+        <article>
+            <h2>Título de mi post</h2>
+            <p>Descripción de mi post</p>
+            <img src="imágenes/imagen blog goku vs vegeta.jpg" width="400px">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, accusamus! Facilis ex totam vel quod provident repellat nemo possimus, eos optio, assumenda quia magnam reiciendis architecto sed aliquid quis laborum!</p>
+        </article>
+
+        <article>
+            <h2>Título de mi post 2</h2>
+            <p>Descripción de mi post 2</p>
+            <img src="imágenes/Goku vs Vegeta Blog 2.webp" width="400px">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, accusamus! Facilis ex totam vel quod provident repellat nemo possimus, eos optio, assumenda quia magnam reiciendis architecto sed aliquid quis laborum!</p>
+        </article>
+
+        <h2>Título de mi post 3</h2>
+            <p>Descripción de mi post 3</p>
+            <img src="imágenes/imagen blog 3 goku vs vegeta.jpg" width="400px">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, accusamus! Facilis ex totam vel quod provident repellat nemo possimus, eos optio, assumenda quia magnam reiciendis architecto sed aliquid quis laborum!</p>
+    </section>
+    <!--Pie de página-->
+    <footer>
+        <!--href generalmente tiene el link del correo pero este truco
+        "mailto:" permite enviar al correo de la computadora y lo 
+        proporciona directamente a lo que va después del punto-->
+        <a href="#titulo">Ven al Inicio</a>
+        <a href="mailto:addrriel@hotmail.com">Envíame un mensaje</a>
+        <p>Copyright 2024</p>
+    </footer>
 </body>
 </html>
